@@ -26,6 +26,8 @@ h1 {
 	font-size: 2.0em;
 }
 
-#invisible {
-	visibility: hidden;
+#stripe {
+	background-color: white;
+	height: 30px;
+	text-align: center;
 }
