@@ -1,5 +1,7 @@
 body {
 	background: #232323;
+	margin: 0;
+	font-family: "Avenir";
 }
 
 .square {
@@ -7,18 +9,27 @@ body {
 	margin: 1.66%;
 	padding-top: 30%;
 	float: left;
-	background: blue;
+	background-color: blue;
+	border-radius: 15%; /* Esquinas redondeadas 50% -> Circulo*/
+	transition: background-color 0.6s; /* Esta propiedad no trabaja en todos los navegadores*/
+	-webkit-transition: background-color 0.6s; /* Safari */
+	-moz-transition: background-color 0.6s; /* Firefox */
 }
 
 #container {
 	max-width: 600px;
-	margin: 0 auto;
+	margin: 20px auto;
 }
 
 h1 {
 	color: white;
 	text-transform: uppercase;
 	text-align: center;
+	background-color: steelblue;
+	margin: 0;
+	font-weight: normal;
+	line-height: 1.1; /* Altura de linea (espaciado entre lineas) */
+	padding: 20px 0;
 }
 
 #colorDisplay {
@@ -32,5 +43,31 @@ h1 {
 }
 
 .selected {
-	background-color: blue;
+	background-color: steelblue;
+	color: white;
+}
+
+button {
+	border: none;
+	background-color: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px; /* Espacio entre cada letra */
+	font-size: inherit; /* Heredada del padre */
+	transition: all 0.3s; /* Su característica es cambiar una propiedad (o un grupo de ellas) en un período de tiempo determinado. Argumentos: para que atributos, cantidad de segundos probar con 2.0s */
+	-webkit-transition: all 0.3s; /* Safari */
+	-moz-transition: all 0.3s; /* Firefox */
+	outline: none; /* Linea alrededor de boton */
+}
+
+#message {
+	display: inline-block;
+	width: 20%;
+}
+
+button:hover {
+	color: white;
+	background-color: steelblue;
 }
